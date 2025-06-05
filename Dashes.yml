@@ -1,0 +1,13 @@
+extends: existence
+message: "Remove the spaces around '%s'."
+link: https://psv19doct1/onlinehelp/docteamhelp/en/index.htm#page/documentation-authoring-guide/Punctuation.html#ww3_12_9_35_13_1
+ignorecase: true
+nonword: true
+level: error
+action:
+  name: edit
+  params:
+    - trim
+    - " "
+tokens:
+  - '\s[—–]\s|\s[—–]|[—–]\s'
